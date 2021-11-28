@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>MetaReader</h2>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="dashboard.html">Meus dados</a></li>
+
+        </ul>
+    </header>
+
+    <h2 class="titulodash">Dashboard</h2>
+
+    <div class="container">
+        <div class="card" style=" --i:-1">
+            <div class="content" style="--j:1">
+                <h2>Calculadora</h2>
+                <br>
+                <h4>Calcule sua leitura</h4>
+                <br>
+                <form id="">
+                    <input type="text" id="nomelivro" placeholder="Nome do livro">
+                    <br><br>
+                    <input type="text" id="numdpags" placeholder="Número de páginas">
+                    <br>
+                    <br>
+                    <input type="text" id="mediatempo" placeholder="Média de tempo livre em minutos">
+                </form>
+                <br><br>
+                <button class="bt" onclick="calcular()">Calcular tempo</button>
+                <br><br>
+                <div id="msgresult"></div>
+
+            </div>
+        </div>
+        <div class="card" style=" --i:0">
+            <div class="content" style="--j:1">
+                <div class="telaanalise">
+                    <h2>Suas Leituras</h2>
+                    <span>Lidos
+
+                        <img class="imglidos"
+                            src="https://images.vexels.com/media/users/3/157233/isolated/preview/f6bf1094d2550ae80df80f6840f7d5e6-icone-de-livro-didatico-simples.png">
+                        <p id="numlidos">0</p>
+
+                    </span>
+
+                    <span>Tempo
+
+                        <img class="imgtempo" src="https://cdn-icons-png.flaticon.com/512/151/151770.png" alt="">
+                        <p id="numtempo">0</p>
+
+                    </span>
+
+                    <span>Páginas
+
+                        <img class="imgpags" src="https://cdn-icons-png.flaticon.com/512/1250/1250681.png" alt="">
+                        <p id="numpags">0</p>
+
+                    </span>
+                    <span id="inputs">
+                        <form action="" id="analise">
+                            <input name="nlivro" id="livrolido" placeholder="Quantos livros lidos">
+                            <input name="npgs" id="tempolido" placeholder="Tempo Lido (dias)">
+                            <input name="tlivro" id="paginaslidas" placeholder="Páginas Lido">
+                        </form>
+
+                    </span>
+                    <button class="bt" onclick="att()">Atualizar</button>
+
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="card" style=" --i:1">
+            <div class="content" style="--j:3">
+                <h2>Sorteio</h2>
+                <br>
+                <p class="sorttitulo"> Não sabe o que ler? A gente escolhe </p>
+                <br>
+                <select id="genero">
+                    <option value="">Selecione o gênero</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="ficcao">Ficção</option>
+                    <option value="autoajuda">Auto-Ajuda</option>
+
+                </select>
+                <br><br>
+                <button class="bt" onclick="sorteio()">Sortear</button>
+                <br><br>
+                <div id="msgsort"></div>
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+<script src="script.js"></script>

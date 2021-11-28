@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssteste.css">
+</head>
+
+<body background="imgs/bg.png">
+
+
+    <header>
+        <h2>MetaReader</h2>
+            <ul class="navbar">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+
+
+
+    <section id="1">
+        <img src="imgs/bg.png" id="bg">
+        <img src="imgs/livro.png" id="livro">
+        <h2 id="titulo">Metareader</h2>
+        <h4 id="texto">A leitura é um grande passatempo para muitos, porém
+            as vezes pode se tornar bagunçado. <br> Com a MetaReader, suas leituras ficam organizadas. Quer saber mais?
+            Clique abaixo e descubra!</h4>
+        <a href="teste.html" id="btn">Explorar</a>
+
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#livro", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            x: -1500,
+        })
+
+        gsap.to("#titulo", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            y: -1500,
+        })
+
+        gsap.to("#texto", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            y: -1400,
+        })
+
+        gsap.to("#btn", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            x: 1400,
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

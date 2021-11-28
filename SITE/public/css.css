@@ -1,0 +1,596 @@
+@import url(fonts/KidsOnTheMoon.ttf);
+@import url(fonts/Cinzel-Black.otf);
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:  Cinzel;
+scroll-behavior: smooth;
+
+}
+
+header {
+    
+    margin-top: 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    
+}
+
+header h2{
+    
+    font-size: 27px;
+    font-family: Kids On The Moon;
+    display: flex;
+    justify-self: left;
+    color: white;
+    
+}
+
+.navbar {
+
+    margin-left: 35%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.navbar .active {
+
+    font-weight: bolder;
+    color: #5902bd;
+    
+    }
+    
+    .navbar a {
+    
+    color: white; 
+    text-decoration: none;  
+    
+}
+
+li:hover {
+
+    color: #a35ef3;
+    background-color: #a35ef3;
+    padding: 9px;
+    border-radius: 20px;
+}
+
+body {
+
+background-color: #320759;
+
+}
+
+section {
+
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+
+}
+
+section::before {
+
+content: '';
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;
+background: linear-gradient(to top, #340f5d,  transparent);
+z-index: 1000000;
+}
+
+section img {
+
+position: absolute;
+top: 0;
+left: 0;
+max-width: 100%;
+
+}
+
+
+
+.desc {
+
+position: relative;
+padding: 100px;
+background-color: #091328;
+text-align: center;
+}
+
+.desc h2 {
+
+font-size: 30px;
+color: blueviolet;
+font-family: Kids On The Moon;
+position: absolute;
+top: 10%;
+left: 30%;
+}
+
+.desc p {
+
+color: white;
+font-size: 23px;
+justify-self: center;
+display: flex;
+justify-content: left;
+flex-direction: row;
+align-items: center;
+
+}
+
+.desc #menina {
+
+margin-left: 0;
+width: 60vh;
+display: flex;
+justify-content: left;
+flex-direction: row;
+}
+
+#btc {
+
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    transform: translate(-50%,50%);
+    margin-top: 80px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #420e41;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #ce92bc;
+    z-index: 10000;
+    border: none;
+}
+
+#text {
+
+position: absolute;
+top: 55%;
+right: 55%;
+transform: translateY(-30%);
+color: #160c35;
+font-size: 9vw;
+white-space: nowrap;
+text-shadow: 0 5px rgba(0, 0, 0, 10);
+font-family: Kids On The Moon;
+font-weight: lighter;
+
+}
+
+
+#btn {
+
+    position: absolute;
+    top: 56%;
+    left: 17%;
+    transform: translate(-50%,50%);
+    margin-top: 80px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #420e41;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #ce92bc;
+    z-index: 10000;
+    
+}
+
+
+#btn:hover {
+
+background: linear-gradient(#420e41, #382933);
+
+}
+
+.cadastro {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30%;
+height: 5%;
+margin: auto;
+margin-top: 20px;
+background-color: white;
+border-radius: 0px 8em 0px 8em;
+line-height: 20px;
+}
+       
+.bt {
+    
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(133, 99, 243);
+    color: black;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.bt:hover {
+
+color: #fff;
+        
+}
+    
+    
+input {
+        
+border: 2px solid black;
+border-radius: 10px;
+padding: 10px;
+font-weight: bold;
+        
+            
+}
+
+.cadastro h2 {
+        
+font-family: Kids On The Moon;
+color: black;
+margin-top: 10px;
+
+}
+
+.cada{
+position: relative;
+;margin-top: 20px;
+font-size: 13px;
+letter-spacing: 1px;
+color: #afaeae;
+text-transform: uppercase;
+font-weight: 300;
+}
+
+.cada a{
+font-weight: 600;
+text-decoration: none;
+color:blueviolet
+}
+
+
+
+        
+.bt {
+        
+padding: 15px;
+border-radius: 20px;
+background-color: rgb(133, 99, 243);
+color: black;
+backdrop-filter: blur(5px);
+transition: 0.5s;
+font-weight: bold;
+border: none;
+margin-bottom: 6px;
+}
+    
+.bt:hover {
+    
+color: #fff;
+            
+}
+
+input {
+    
+border: 2px solid black;
+border-radius: 10px;
+padding: 10px;
+font-weight: bold;
+
+    
+}
+
+p{
+
+color: black;
+
+}
+
+.login {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30%;
+height: 60vh;
+margin: auto;
+margin-top: 8%;
+background-color: white;
+border-radius: 0px 8em 0px 8em;
+
+}
+
+.login h2 {
+
+font-family: Kids On The Moon;
+
+}
+
+
+#leituras {
+
+    height: 500px;
+    background-image: url(imgs/dash1.png);
+} 
+ 
+    
+#leituras{
+       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    
+#leituras .msgola {
+   
+
+color: white;
+font-weight: bold;
+font-size: 30px;
+position: relative;
+margin-top: 5%;
+
+}
+
+
+#leituras .telaanalise {
+    
+    top: 80%;
+    background-color: rgba(255, 255, 255, 0.808);
+    box-shadow: 20px 20px 50px rgba(17, 17, 17, 0.5);
+    border-radius: 0px 8em 0px 8em;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#leituras .inputs{
+
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+top: 30%;
+
+}
+
+
+#leituras .telaanalise .imglidos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    width: 80px;
+    top: 30%;
+    left: 33%;
+}
+
+#leituras .telaanalise .imgtempo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px ;
+    width: 80px;
+    top: 30%;
+    left: 59%;
+}
+
+#leituras .telaanalise .imgpags {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px ;
+    width: 80px;
+    top: 30%;
+    left: 59%;
+}
+
+#leituras .telaanalise span {
+
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    top: 50%;
+    left: 52%;
+
+}
+
+    
+#leituras .telaanalise #numpags{
+    
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    top: 56%;
+    left: 63%;
+ 
+}
+
+
+
+#leituras .telaanalise #numlidos {
+    
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    top: 56%;
+    left: 37%;
+
+    
+}
+    
+#leituras .telaanalise #numtempo {
+
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    top: 56%;
+    left: 50%;
+    
+}
+
+
+
+#leituras .telaanalise .bt {
+
+bottom: 10%;
+
+}
+
+#calculadora {
+    
+    height: 500px;
+    background-image: url(imgs/dash.png);
+                
+    } 
+
+
+    
+#calculadora {
+    
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+    
+#calculadora .calctitulo {
+    
+color: black;
+font-weight: bold;
+font-size: 30px;
+margin-bottom: 100px;
+    
+}
+
+#calculadora .desccal {
+
+font-size: 20px;
+
+}
+    
+#calculadora .calculos {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+    }
+    
+#calculadora .calculos input{ 
+    
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    
+    }
+    
+#calculadora button {
+    
+    margin-top: 20px ;
+    
+}
+    
+    
+#sorteio {
+    
+    height: 500px;
+    background-image: url(imgs/dash3.png);
+    
+}
+    
+#sorteio {
+    
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+}
+    
+#sorteio .sorttitulo {
+    
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 100px;
+    
+}
+    
+#sorteio select {
+    
+    width: 20%;
+    height: 10%;
+    font-size: 20px;
+    box-shadow: 20px 20px 50px rgba(17, 17, 17, 0.5);
+    border-radius: 10px;
+    
+    
+    }
+    
+#sorteio button {
+    
+    margin-top: 40px;
+    
+}
+    
+#sorteio #msgsort {
+    
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+    footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(imgs/fundo.png);
+    height: 20vh;
+    color: white;
+}
